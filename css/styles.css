@@ -1,0 +1,70 @@
+/* Collection name: site_javieraNuñez */
+/* Mode: Mode 1 */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #484848;
+  --card-bg: #f3f3f3;
+}
+
+body.dark{
+   background-color: #000;
+    --text-color:#ffffff;
+}
+
+body{
+    background-color: var(--bg-color)
+    font-family arial;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color)
+}
+
+.contenedor{
+    width: 1440px ;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.card{
+    width: 20%;
+    margin: 2%;
+    float: left;
+    height: 300px;
+    background-color: var(--card-bg)
+}
+
+h1{
+    font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+@media (max-width: 1024px) {
+    body {
+    background-color: rgb(253, 253, 254);
+ }
+
+ .contenedor{
+   width: 100% ;
+ }
+ .card {
+    width:100%;
+    margin: 20px 0 50px 0;
+  }
+  
+}
+#toggle-theme {
+  padding: 8px 16px;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgb(64, 122, 185);
+  display: block;
+  transition: background-color 0.3, transform 0.3;
+}
+#toggle-theme:hover{
+  background-color: rgb(155, 209, 225);
+  transform: scale(1.05);
+}
